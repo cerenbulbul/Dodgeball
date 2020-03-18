@@ -41,7 +41,7 @@ Group Members= Sevda Gülen, Ceren Bülbül
 
 * < assignment operator > ::= **EQ**  | **BE**| **SE** | **B** | **S**
 
-* < assign expression > ::= < create statement >  =  **ROLE**(< numeric type >)| < and expression > = **TEAM**
+* < assign expression > ::= < create statement >  =  **ROLE**(< numeric type >) | < and expression > = **TEAM**
 
 * < or expression > ::= < conditional or expression > < logical-operator > < conditional or expression >
 

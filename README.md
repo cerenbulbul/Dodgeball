@@ -5,7 +5,7 @@ Group Members= Sevda Gülen, Ceren Bülbül
 
 ### Blocks and Commands ###
 
-* < program > : STARTGAME < statements > END
+* < program > : **STARTGAME** < statements > **END**
 
 * < statement > : < creation statement > SEMICOLON|< if elseif else statement > | < if  else statement > | < while statement > | < for statement > | COMMENT
 

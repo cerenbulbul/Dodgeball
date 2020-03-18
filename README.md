@@ -1,5 +1,5 @@
 # Programming Language ddg
-Group Members: Sevda Gülen, Ceren Bülbül
+Group Members= Sevda Gülen, Ceren Bülbül
 
 ## Syntax
 

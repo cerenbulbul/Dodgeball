@@ -7,30 +7,30 @@ Group Members= Sevda Gülen, Ceren Bülbül
 
 * < program > : **STARTGAME** < statements > **END**
 
-* < statement > : < creation statement > SEMICOLON|< if elseif else statement > | < if  else statement > | < while statement > | < for statement > | COMMENT
+* < statement > : < creation statement > **SEMICOLON** |< if elseif else statement > | < if  else statement > | < while statement > | < for statement > | **COMMENT**
 
-* < creation statement > ::= KEY CHILDREN 
+* < creation statement > ::= **KEY CHILDREN** 
 
-* < if  statement >::= IF( < expression > ) < statement > 
+* < if  statement >::= **IF**( < expression > ) < statement > 
 
-* < if else statement >::= IF( < expression > ) < statement > ELSE < statement >
+* < if else statement >::= **IF**( < expression > ) < statement > **ELSE** < statement >
 
-* < while statement > ::= WHILE( < expression > ) < statement >
+* < while statement > ::= **WHILE**( < expression > ) < statement >
 
-* < if elseif else statement > IF( < expression > ) < statement > < elseif > ELSE < statement >
+* < if elseif else statement > **IF**( < expression > ) < statement > < elseif > **ELSE** < statement >
 
-* < elseif statement > ::= ELSEIF( < expression > ) < statement > | < elseif statement >
+* < elseif statement > ::= **ELSEIF**( < expression > ) < statement > | < elseif statement >
 
 
 ### Types
 
-* < type > ::= < numeric type > | TEAM | GAMERESULT | < string > | < func type > | 
+* < type > ::= < numeric type > | **TEAM** | **GAMERESULT** | < string > | < func type > | 
   
-* < numeric type > ::= STRENGTH | HEALTH | BALLSPEED 
+* < numeric type > ::= **STRENGTH** | **HEALTH** | **BALLSPEED** 
   
-* < string type > ::= STRING | IDENTIFIER | CHILDREN
+* < string type > ::= **STRING** | **IDENTIFIER** | **CHILDREN**
   
-* < func type > ::= ACTION | ROLE
+* < func type > ::= **ACTION** | **ROLE**
 
   
 ### Expressions
@@ -39,15 +39,15 @@ Group Members= Sevda Gülen, Ceren Bülbül
   
 * < assignment-expression > ::= < numeric type > < assignment-operator > < numeric type >
 
-* < assignment operator > ::= EQ  | BE| SE | B | S
+* < assignment operator > ::= **EQ**  | **BE**| **SE** | **B** | **S**
 
-* < assign expression > ::= < create statement >  =  ROLE(< numeric type >)| < and expression > = TEAM
+* < assign expression > ::= < create statement >  =  **ROLE**(< numeric type >)| < and expression > = **TEAM**
 
 * < or expression > ::= < conditional or expression > < logical-operator > < conditional or expression >
 
-* < and expression > ::= CHILDREN < logical-operator >  CHILDREN | < and expression >
+* < and expression > ::= **CHILDREN** < logical-operator >  **CHILDREN** | < and expression >
 
-* < logical-operator > ::= AND | OR
+* < logical-operator > ::= **AND** | **OR**
 
 * < mathematical expression > ::= < numeric type > < mathematical operator > < numeric type >
 

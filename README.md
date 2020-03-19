@@ -1,5 +1,8 @@
 # Programming Language ddg
-Group Members= Sevda Gülen, Ceren Bülbül
+
+**Group Members:** Sevda Gülen, Ceren Bülbül
+
+**Project Name:** Dodgeball
 
 ## Syntax
 
@@ -56,4 +59,8 @@ Group Members= Sevda Gülen, Ceren Bülbül
 * <mathematical operator> ::= + | - | / | *
 
 
+
+
+
+## Explanations About The Language
 

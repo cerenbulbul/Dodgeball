@@ -56,7 +56,7 @@
 
 * < mathematical expression > ::= < numeric type > < mathematical operator > < numeric type >
 
-* <mathematical operator> ::= + | - | / | *
+* < mathematical operator> ::= + | - | / | *
 
 
 

@@ -21,6 +21,10 @@
 
 * < change statement > ::= **CHANGE** 
 
+* < print statement > ::= **PRINT:**
+
+* < scanner statement > ::= **SCANNER**
+
 * < if  statement >::= **IF**( < expression > ) < statement > 
 
 * < if else statement >::= **IF**( < expression > ) < statement > **ELSE** < statement >
@@ -108,7 +112,11 @@ It is a programming language that has children objects, every children have diff
 
 - **WHILE [^ a-zA-Z0-9] (WHILE \ (. + \)) [^ A-zA-Z0-9]** :arrow_right: WHILE keyword is used when a loop is wanted.
 
-- **IDENTIFIER [a-z]** :arrow_right: Used for letter identifier.
+- **PRINT PRINT:([^a-zA-Z0-9])** :arrow_right: PRINT keyword is used when printing
+
+- **SCANNER SCANNER:([^a-zA-Z0-9])** :arrow_right: SCANNER keyword is used for string and integer taken from the user
+
+- **IDENTIFIER [a-z]$** :arrow_right: Used for letter identifier.
 
 - **STRING  \".*\"** :arrow_right: It is used in places where you want to create a string.
 

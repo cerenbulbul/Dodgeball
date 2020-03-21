@@ -10,9 +10,11 @@
 
 * < program > : **STARTGAME** < statements > **END**
 
-* < statement > : < creation statement > **SEMICOLON** |< if elseif else statement > | < if  else statement > | < while statement > | < for statement > | **COMMENT**
+* < statement > : < creation statement > **SEMICOLON** | < change statement > **SEMICOLON** < if elseif else statement > | < if  else statement > | < while statement > | < for statement > | **COMMENT**
 
 * < creation statement > ::= **KEY CHILDREN** 
+
+* < change statement > ::= **CHANGE** 
 
 * < if  statement >::= **IF**( < expression > ) < statement > 
 

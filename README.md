@@ -64,11 +64,11 @@
 
 ## Explanations About The Language
 
-Our programming language is for dodgeball game. It was made by considering the rules in dodgeball game. 
+Our programming language is for dodgeball game. It was made by considering the rules in dodgeball game.
 
+It is a programming language that has children objects, every children have different roles(escaper,thrower) and have 10 health as default. There are two different group as A and B. Each group must have at least 2 children in. Game Score is decided with the timescore each group gained. The thrower children can throw ball at certain ball speed the escaper can escape or catch the ball if its specificly assigned strength bigger than the throwers strength + its ballspeed/2. If the escaper can catch the ball its health increases +1. 
 
-
-## Tokens
+. We have determined our tokens as follows:
 
 - **STARTGAME (STARTGAME)([^a-zA-Z0-9])** :arrow_right: STARTGAME is a keyword used to start the game.
 

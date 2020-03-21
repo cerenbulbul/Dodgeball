@@ -23,7 +23,7 @@
 
 * < print statement > ::= **PRINT:**
 
-* < scanner statement > ::= **SCANNER**
+* < scanner statement > ::= **SCANNER:**
 
 * < if  statement >::= **IF**( < expression > ) < statement > 
 

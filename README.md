@@ -66,7 +66,7 @@
 
 Our programming language is for dodgeball game. It was made by considering the rules in dodgeball game.
 
-It is a programming language that has children objects, every children have different roles(escaper,thrower) and have 10 health as default. There are two different group as A and B. Each group must have at least 2 children in. Game Score is decided with the timescore each group gained. The thrower children can throw ball at certain ball speed the escaper can escape or catch the ball if its specificly assigned strength bigger than the throwers strength + its ballspeed/2. If the escaper can catch the ball its health increases +1. 
+It is a programming language that has children objects, every children have different roles(escaper,thrower) and have 10 health as default. There are two different group as A and B. Each group must have at least 2 children in. Game Score is decided with the timescore each group gained. The thrower children can throw ball at certain ball speed the escaper can escape or catch the ball if its specificly assigned strength bigger than the throwers strength + its ballspeed/2. If the escaper can catch the ball its health increases +1. If escaper is hit, his health decreases -1. Otherwise, nothing happens to escaper health. 
 
 . We have determined our tokens as follows:
 
@@ -77,6 +77,8 @@ It is a programming language that has children objects, every children have diff
 - **KEY (CREATE | DIE) ([^ a-zA-Z0-9])** :arrow_right: CREATE is used as a keyword when a player is created. DIE is used as a keyword when a player is removed from the game.
 
 - **CHILDREN [A-Z]+**  :arrow_right: Those who play the game
+
+- **CHANGE (CHANGE)([^a-zA-Z0-9])** :arrow_right: The CHANGE keyword changes roles in teams.
 
 - **ACTION THROWING | ESCAPING | CATCHING** :arrow_right: Players' actions
 
@@ -107,15 +109,17 @@ It is a programming language that has children objects, every children have diff
 
 - **MINUS [-]** :arrow_right: it is a mathematical expression. It is used for abstraction operations.
 
+- **DIVIDE [/]** :arrow_right: it is a mathematical expression. It is used for divition operations.
+
 - **ASSIGNMENT =** :arrow_right: Used to assign the player's power or to assign the player to his team.
 
 - **AND &&** :arrow_right: AND used for operations
 
 - **OR ||** :arrow_right: Or used for operations.
 
-- **INTEGER [0-9] +** :arrow_right: Used to specify integer numbers starting at 0
+- **CONSTANT [0-9] +** :arrow_right: Used to specify integer numbers starting at 0
 
-- **EE ==, BE> =, SE <=, S <, B >** :arrow_right: It is used for the equality, magnitude, smallness, big equality and small equation of two numbers.
+- **EQ ==, BE> =, SE <=, S <, B >** :arrow_right: It is used for the equality, magnitude, smallness, big equality and small equation of two numbers.
 
 - **COMMENT [^ a-zA-Z0-9] ([//]. + [//]) [^ a-zA-Z0-9]** :arrow_right: Used to comment. These comments do not return anything.
 

@@ -8,7 +8,7 @@ TIMESCORE [0-9]+[S]
 GAMERESULT WIN|LOST|DRAW
 ACTION THROWING|ESCAPING|CATCHING
 ROLE THROWER|ESCAPER
-PRINT PRINT:([^a-zA-Z0-9])
+PRINT PRINT:
 SCANNER SCANNER:([^a-zA-Z0-9])
 STRING  \".*\"
 CHILDREN [A-Z]+
@@ -37,7 +37,7 @@ CHANGE (CHANGE)([^a-zA-Z0-9])
 %%
 {STRENGTH} {printf(" STRENGTH ");}
 {HEALTH} {printf(" HEALTH ");}
-{STRING} {printf(" ");}
+{STRING} {printf(" STRING ");}
 {PRINT} {printf(" PRINT ");}
 {SCANNER} {printf(" SCANNER ");}
 {BALLSPEED} {printf(" BALLSPEED ");}
@@ -76,4 +76,3 @@ main()
 {
 yylex();
 }
-

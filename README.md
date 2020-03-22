@@ -15,13 +15,13 @@
 
 * < program > : **STARTGAME** < statements > **END**
 
-* < statement > : < creation statement > **SEMICOLON** | < change statement > **SEMICOLON** < if elseif else statement > | < if  else statement > | < while statement > | < for statement > | **COMMENT**
+* < statement > : < creation statement > **SEMICOLON** | < change statement > **SEMICOLON** < if elseif else statement > | < if  else statement > | < while statement > | < for statement > | **COMMENT** | < print statement > |  < scanner statement >
 
 * < key statement > ::= **KEY CHILDREN** | < key statement > < assign expression >
 
 * < change statement > ::= **CHANGE** 
 
-* < print statement > ::= **PRINT:**
+* < print statement > ::= **PRINT:** < string type >
 
 * < scanner statement > ::= **SCANNER:**
 

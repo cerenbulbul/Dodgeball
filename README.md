@@ -112,7 +112,7 @@ It is a programming language that has children objects, every children have diff
 
 - **WHILE [^ a-zA-Z0-9] (WHILE \ (. + \)) [^ A-zA-Z0-9]** :arrow_right: WHILE keyword is used when a loop is wanted.
 
-- **PRINT PRINT:([^a-zA-Z0-9])** :arrow_right: PRINT keyword is used when printing
+- **PRINT PRINT:([^a-zA-Z0-9])** :arrow_right: PRINT keyword is used when printing. It icludes string value and yhe string value is written with " " sign. 
 
 - **SCANNER SCANNER:([^a-zA-Z0-9])** :arrow_right: SCANNER keyword is used for string and integer taken from the user
 
